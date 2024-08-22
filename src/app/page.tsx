@@ -1,10 +1,13 @@
-import {Button} from "@atoms/Button/Button";
-import {ButtonVariants} from "@atoms/Button/ButtonEnums";
+import Image from "next/image";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Home() {
-  return (
-      <main>
-            <Button variant={ButtonVariants.Outline}>Click me</Button>
-      </main>
-  )
+    return (
+        <>
+            <NavBar logoSrc={'/images/logo.svg'}>
+            </NavBar>
+            <main>
+            </main>
+        </>
+    )
 }

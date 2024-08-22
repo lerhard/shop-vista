@@ -1,3 +1,7 @@
+/*---------------------------------------------------------------------------*\
+    #VARIABLES
+\*---------------------------------------------------------------------------*/
+
 :root {
     --font-family-base: 'DM_Sans', sans-serif;
 
@@ -14,8 +18,21 @@
     --background-success-hover: #7bed9f;
     --background-info: #1e90ff;
     --background-info-hover: #70a1ff;
+    --background-white: #ffffff;
 
+
+    --color-primary: #3742fa;
+    --color-secondary: #2f3542;
+    --color-danger: #ff4757;
+    --color-warning: #ffa502;
+    --color-success: #2ed573;
+    --color-info: #1e90ff;
+    --color-white: #ffffff;
 }
+
+/*---------------------------------------------------------------------------*\
+ #GLOBAL STYLES
+\*---------------------------------------------------------------------------*/
 
 * {
     font-family: var(--font-family-base);
@@ -26,5 +43,53 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100vw;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/*---------------------------------------------------------------------------*\
+ #CONTAINER
+\*---------------------------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 15px 15px;
+}
+
+/*----------------------------------------------------------------------------*\
+ #RESPONSIVE BREAKPOINTS
+\*----------------------------------------------------------------------------*/
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+
+        max-width: 1440px;
+    }
 }

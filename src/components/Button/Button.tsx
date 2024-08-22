@@ -1,5 +1,5 @@
 import './style.css';
-import {ButtonColors, ButtonStyle, ButtonTypes, ButtonVariants} from "@atoms/Button/ButtonEnums";
+import {ButtonColors, ButtonStyle, ButtonTypes, ButtonVariants} from "@/components/Button/ButtonEnums";
 
 interface ButtonProps {
     children: React.ReactNode;
